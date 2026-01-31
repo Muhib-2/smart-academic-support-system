@@ -1,1 +1,4 @@
-print("My name is thonedra. Hello, how are you")
+## command we need to run the program
+## command we need to run the program
+## run the app.py   
+##

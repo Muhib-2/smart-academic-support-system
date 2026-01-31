@@ -104,7 +104,8 @@ def train_and_save_models(
             f"✅ Put your real dataset CSV at: {DEFAULT_DATASET_PATH} (or pass dataset_csv=...)"
         )
 
-    df = pd.read_csv(dataset_csv)
+    df = pd.read_csv(dataset_csv, sep=";")
+
 
     # Auto-create/auto-detect target for common student datasets
     df, derived_target = _derive_grade_category_if_needed(df)
